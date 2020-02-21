@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-     int n,a;
-     unsigned long int fact=1;
+main()
+  {
 
-      printf("Enter a number \n");
-       scanf("%d",&a);
+       int a,n,b,p=1;
 
-     for(int i=1;i<=a;i++)
-     {
-        fact*=i;
+             printf("Enter a number\n");
+             scanf("%d",&a);
 
-     }
- printf("%llu",fact);
+             printf("Give power\n");
+             scanf("%d",&b);
 
+             for(int i=1;i<=b;i++)
+             {
+
+               p*=a;
+
+             }
+
+
+      printf("%d",p);
 }
